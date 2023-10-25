@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "ff-meta-web-pro", sans-serif;
+}
+
+/* Klasy uniwersalne */
+
+.text__light {
+    color: #fff;
+}
+
+.text__rotated {
+    transform: rotateZ(-90deg);
+}
+
+.text__absolute {
+    position: absolute;
+    top: 5em;
+    left: -2em;
+}
+
+.home {
+    --_home__red: #f15a30;
+    --_home__navy: #0d2c40;
+    --_home__cyan: #55C7DC;
+}
+
+/* Intro */
+
+.intro {
+    --_intro__height: 320px;
+    position: relative;
+}
+
+.intro__heading {
+    background-color: var(--_home__red);
+}
+
+.intro__heading__content {
+    height: var(--_intro__height);
+    width: 66.66666%;
+    margin-left: auto;
+    background: var(--_home__navy) url('img/star.svg') no-repeat left bottom;
+    background-size: 50%;
+    padding: 1em;
+}
