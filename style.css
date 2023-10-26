@@ -11,8 +11,17 @@
     color: #fff;
 }
 
+.text__dark {
+    color: var(--_home__navy) !important;
+}
+
 .text__rotated {
     transform: rotateZ(-90deg);
+}
+
+.text__rotated__rwd {
+    transform: none;
+
 }
 
 .text__absolute {
@@ -21,10 +30,67 @@
     left: -2em;
 }
 
+.td-n {
+    text-decoration: none;
+}
+
+.bg__dark {
+    color: #fff;
+    background-color: var(--_home__navy);
+}
+
+.bg__cyan {
+    background-color: var(--_home__cyan);
+}
+
+.bg__pink {
+    background-color: var(--_home__pink);
+}
+
+.p-1 {
+    padding: 1em;
+}
+
+.pt-3{
+    padding-top: 3em;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-block{
+    display: block;
+}
+
+.lh-15{
+    line-height: 1.5em;
+}
+
+
 .home {
     --_home__red: #f15a30;
     --_home__navy: #0d2c40;
     --_home__cyan: #55C7DC;
+    --_home__pink: #C87AB2;
+    --_home__link__color: #fff;
+    --_home__sepia: #F6EFE5;
+    color: var(--_home__navy);
+    background-color: var(--_home__sepia);
+}
+
+.home p {
+    margin-bottom: 1em;
+    line-height: 1.6em;
+}
+
+.home a {
+    color: var(--_home__link__color);
+}
+
+.home h3 {
+    font-size: 1.6em;
+    padding: .5em 0 1em 0;
 }
 
 /* Intro */
@@ -34,8 +100,16 @@
     position: relative;
 }
 
+/* Lewa część */
+
 .intro__heading {
     background-color: var(--_home__red);
+}
+
+/* Rotated text */
+
+.intro__heading__rotated{
+    font-size: 1em!important;
 }
 
 .intro__heading__content {
@@ -44,5 +118,76 @@
     margin-left: auto;
     background: var(--_home__navy) url('img/star.svg') no-repeat left bottom;
     background-size: 50%;
-    padding: 1em;
+    padding: 1em .5em;
+}
+
+/* Prawa część */
+
+.intro__desc {
+    background: var(--_home__pink) url("img/icons-3-pack.svg") no-repeat center bottom;
+    background-size: contain;
+    padding: 2em 1em 37% 1em;
+}
+
+/* Enlightment */
+
+/* About */
+
+/* Benefits */
+
+.benefits{
+    background: var(--_home__cyan) url("img/icon-circles.svg") no-repeat center top;
+    background-size: 33%;
+    padding-top: 8em;
+}
+
+/* Requirements */
+
+.requirements__link {
+    margin-right: 0.5em;
+}
+
+/* Navigation */
+
+.navigation__heading {
+    padding: 3em 1em 2em 1em;
+}
+
+.navigation__content {
+    counter-reset: content__card;
+}
+
+.navigation__content__card {
+    color: #fff;
+    padding: 5em 1em 2em 1em;
+}
+
+.navigation__content__card::before {
+    counter-increment: content__card;
+    content: counter(content__card);
+    font-size: 3em;
+    display: block;
+}
+
+.navigation__content__card:nth-child(even) {
+    background-color: var(--_home__red);
+}
+
+.navigation__content__card:nth-child(odd) {
+    background-color: var(--_home__navy);
+}
+
+.navigation__content__card:nth-child(3),
+.navigation__content__card:nth-child(7) {
+    background-color: var(--_home__cyan);
+}
+
+/* Archieves */
+
+/* Resources */
+
+.resources{
+    padding-bottom: 10em;
+    background: var(--_home__cyan) url('img/icon-circles.svg') no-repeat center bottom;
+    background-size: 35%;
 }
