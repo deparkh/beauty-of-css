@@ -240,7 +240,7 @@ body {
     .enlightment__primary {
         width: 40%;
         margin-left: auto;
-        padding: 8em 0;
+        padding: 8em 1em;
     }
 
     .enlightment__secondary {
