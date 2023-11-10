@@ -240,7 +240,7 @@ body {
     .enlightment__primary {
         width: 40%;
         margin-left: auto;
-        padding: 8em 0;
+        padding: 8em 1em;
     }
 
     .enlightment__secondary {
@@ -287,7 +287,7 @@ body {
 .benefits {
     background: var(--_home__cyan__rgba) url(img/icon-circles.svg) no-repeat center top;
     background-size: 33%;
-    padding-top: 7em;
+    padding-top: 30%;
 }
 
 /* Participation */
@@ -455,6 +455,7 @@ body {
 @media (min-width:1140px) {
     .navigation__content__card:first-child {
         margin-top: -29em;
+        padding-top: 37.5em;
     }
 }
 
